@@ -22,4 +22,10 @@ public class FizzBuzzConverterTest {
         this.fizzBuzz = new FizzBuzzConverter();
         assertEquals("Buzz", fizzBuzz.convert(5));
     }
+
+    @Test
+    public void converterReturnsFizzBuzzWhenGivenFifteen() {
+        this.fizzBuzz = new FizzBuzzConverter();
+        assertEquals("FizzBuzz", fizzBuzz.convert(15));
+    }
 }
