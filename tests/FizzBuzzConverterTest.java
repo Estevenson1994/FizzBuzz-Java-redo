@@ -16,4 +16,10 @@ public class FizzBuzzConverterTest {
        this.fizzBuzz = new FizzBuzzConverter();
        assertEquals("Fizz", fizzBuzz.convert(3));
    }
+
+    @Test
+    public void converterReturnsBuzzWhenGivenFive() {
+        this.fizzBuzz = new FizzBuzzConverter();
+        assertEquals("Buzz", fizzBuzz.convert(5));
+    }
 }
