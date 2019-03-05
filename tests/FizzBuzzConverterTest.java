@@ -40,4 +40,22 @@ public class FizzBuzzConverterTest {
           }
       }
    }
+
+
+    @Test
+    public void allMutliplesOfFiveButNotThreeGiveBuzz() {
+        for (int i = 1; i <= 100; i++) {
+            if (!(i % 3 == 0) && (i % 5 == 0)) {
+                assertEquals("Buzz", fizzBuzz.convert(i));
+            }
+        }
+    }
+
+    @Test
+    public void allMutliplesThreeAndFiveGiveFizzBuzz() {
+        for (int i = 1; i <= 100; i++)
+            if ((i % 3 == 0) && (i % 5 == 0)) {
+                assertEquals("FizzBuzz", fizzBuzz.convert(i));
+            }
+    }
 }
